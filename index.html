@@ -5,19 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link  href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <script src="js/main.js"></script>
+<div class="container">
+  <form  id="contactForm">
+    <h1>Add to your contacts</h1>
+    <input id="firstName" type="text"  placeholder="First Name" required>
+    <input id="lastName" type="text" placeholder="Last Name" required>
+    <input id="telNumber" type="text" placeholder="Telephone Number" required>
+    <select class="category" name="category" id="category">
+      <option value="relatives">Relatives</option>
+      <option value="friends">Friends</option>
+      <option value=" acquaintances ">Acquaintances </option>
+    </select>
+    <button id="formBtn" type="submit" >Add</button>
+  </form>
+
+  <div class="contacts">
+    <div class="contacts__inner">
+      <h2>My Contacts</h2>
+      <select name="sorting" id="sorting">
+        <option value="all">All</option>
+        <option value="relatives">Relatives</option>
+        <option value="friends">Friends</option>
+        <option value=" acquaintances ">Acquaintances </option>
+      </select>
+    </div>
+  
+    <ul id="contactList" class="contact__list">
+      <li class="contact__item Relatives">
+        <div class="contact__desc">
+          <div class="desc__inner">
+            <i class='bx bxs-user'></i>
+            <p class="first-name">Nozigul</p>
+            <p class="last-name">Ibrokhimova</p>
+          </div>
+          <a href="telto:+998907209320" class="phone_num"><i class='bx bxs-phone' ></i> +998-90-720-93-20 </a>
+
+        </div>
+      </li>
+      <li class="contact__item Friends">
+        <div class="contact__desc">
+          <div class="desc__inner">
+            <i class='bx bxs-user'></i>
+            <p class="first-name">Laylo</p>
+            <p class="last-name">Kasimaliyeva</p>
+          </div>
+          <a href="telto:+998907209320" class="phone_num"><i class='bx bxs-phone' ></i> +998-93-340-75-12 </a>
+  
+        </div>
+      </li>
+      <li class="contact__item Relatives">
+        <div class="contact__desc">
+          <div class="desc__inner">
+            <i class='bx bxs-user'></i>
+            <p class="first-name">Jaloliddin</p>
+            <p class="last-name">Boboyev</p>
+          </div>
+          <a href="telto:+998907209320" class="phone_num"><i class='bx bxs-phone' ></i> +998-90-946-84-31 </a>
+        
+        </div>
+      </li>
+      <li class="contact__item Acquaintances">
+        <div class="contact__desc">
+          <div class="desc__inner">
+            <i class='bx bxs-user'></i>
+            <p class="first-name">Dmitriy</p>
+            <p class="last-name">Dudakov</p>
+          </div>
+          <a href="telto:+998907209320" class="phone_num"><i class='bx bxs-phone' ></i> +998-90-720-88-88 </a>
+         
+        </div>
+      </li>
+      <li class="contact__item Friends">
+        <div class="contact__desc">
+          <div class="desc__inner">
+            <i class='bx bxs-user'></i>
+            <p class="first-name">Khadichabegim</p>
+            <p class="last-name">Rakhimova</p>
+          </div>
+          <a href="telto:+998907209320" class="phone_num"><i class='bx bxs-phone' ></i> +998-90-002-57-51 </a>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+ 
+
+</div>
+    
+
+
+
+    <script src="main.js"></script>
   </body>
 </html>
