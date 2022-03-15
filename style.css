@@ -11,7 +11,7 @@ body{
 }
 .container{
   display: flex;
-  width: 60%;
+  width: 70%;
   margin: 130px auto;
   background-color: rgba(255, 255, 255, 0.89);
   padding: 30px 40px;
@@ -25,7 +25,7 @@ form{
   margin-right: 60px;
 }
 input{
-  width: 100%;
+  width: 400px;
   height: 50px;
   margin-bottom: 30px;
   font-size: 20px;
