@@ -56,7 +56,7 @@ elForm.addEventListener("submit", (e)=>{
     <p class="filter">${elCategory.value}</p>
   </div>
 </li>`
-li.classList=elCategory.value;
+li.classList= `${elCategory.value}`;
 elList.appendChild(li);
 });
 
